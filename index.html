@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Dancing+Script&display=swap"
+    rel="stylesheet">
+<style>
+    /* CSS Reset  */
+    body {
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('images/fitness.jpg');
+        background-size: 100%;
+
+    }
+
+    .left {
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        /* border: 2px solid red; */
+        padding: 4px;
+        display: inline-block;
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+
+    }
+
+    .left img {
+        width: 85px;
+
+    }
+
+    .mid {
+        /* To make elements in centre first do display as block and then change the width and then apply margin  */
+        display: block;
+        width: 35.7%;
+        margin: 10px auto;
+        /* border: 2px solid yellow; */
+    }
+
+    .right {
+        color: blue;
+        display: inline-block;
+        /* border: 2px solid pink; */
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    }
+
+    .navbar {
+        display: inline-block;
+        /* width:50px; */
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn {
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 3px 10px;
+        border: 3px solid grey;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(65, 64, 64);
+
+    }
+
+    .container {
+        margin: 102px 102px;
+        padding: 41px;
+        width: 37%;
+        border: 2px solid white;
+        border-radius: 8px;
+    }
+
+    .form-group input {
+        display: block;
+        text-align: center;
+        width: 444px;
+        padding: 1px;
+        margin: 3px auto;
+        border: 2px solid black;
+        font-size: 20px;
+        border-radius: 8px;
+        font-family: 'Baloo Bhaijaan 2', sans-serif;
+    }
+
+    .container h1 {
+        margin: -20px 0px 42px 0px;
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 44%;
+        line-height: 22px;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="images/logo.jpg" alt="">
+            <div>Fitness House</div>
+        </div>
+
+        <!-- mid bos for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Howrah now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+                <input type="text" name="" placeholder="Enter your age">
+                <input type="text" name="" placeholder="Enter your gender">
+                <input type="text" name="" placeholder="Enter your address">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
